@@ -1,0 +1,133 @@
+html, body, p, h1, h2, div, ul, li, pre {
+  padding: 0;
+  margin: 0;
+}
+
+#zone {
+  width: 100%;
+  min-height: 100%;
+  background-color: tomato;
+  text-align: center;
+}
+
+#zone h1 {
+  font-family: sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 52px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 60px 8px 0 8px;
+}
+
+#dragResults {
+  padding: 15px 0 40px 0;
+  width: 100%; 
+}
+
+#dragResultsContent {
+  width: 420px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 3px;
+  padding-bottom: 6px;
+}
+
+#files {
+  list-style-type: none;
+}
+
+#files li {
+  padding: 2px 8px;
+}
+
+.options {
+  list-style-type: none;
+  float: right;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.options.show {
+  opacity: 1;
+}
+
+.options li {
+  display: inline-block;
+  padding: 0 6px;
+  float: left;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.size {
+  font-family: sans-serif;
+  line-height: 24px;
+  font-size: 12px;
+  float: left;
+  position: relative;
+  top: 2px;
+  padding-left: 10px;
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.filename {
+  font-family: sans-serif;
+  line-height: 24px;
+  font-size: 12px;
+  float: left;
+  position: relative;
+  top: 2px;
+  padding-left: 10px;
+}
+
+.options li a {
+  text-decoration: none;
+  text-transform: lowercase;
+  color: rgba(100, 100, 100, 0.5);
+  transition: all 0.2s ease;
+}
+
+.options li a.active {
+  color: tomato;
+}
+
+#result {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.progress {
+  clear: both;
+  background-color: RGBA(255, 99, 71, 0.4);
+  padding: 2px 4px 3px 10px;
+  overflow: scroll;
+  line-height: 28px;
+  border-radius: 3px;
+  color: rgba(51, 51, 51, 0.4);
+  box-sizing: border-box;
+  height: 32px;
+  transition: all 0.2s linear;
+  font-family: sans-serif;
+  line-height: 28px;
+  font-size: 12px;
+}
+
+.progress.done {
+  background-color: rgba(51, 51, 51, 0.1);  
+}
+
+.url {
+  clear: both;
+  background-color: rgba(51, 51, 51, 0.1);
+  padding: 2px 4px 3px 10px;
+  overflow: scroll;
+  line-height: 28px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  height: 32px;
+}

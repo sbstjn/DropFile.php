@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DropFile Box</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <div id="zone"><h1>Drop files here</h1>
+      <div id="dragResults">
+        <div id="dragResultsContent"><ul id="files"></ul></div>
+      </div>
+    </div>
+   
+    <script src="./script.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        new Uploader({
+          zone: 'zone',
+          upload: './upload.php',
+          result: 'files',
+          baseurl: 'http://files.example.com'
+        }); 
+      };
+    </script>
+  </body>
+</html>
